@@ -97,7 +97,7 @@ function App() {
         }
         try {
             // In a real setup, the backend URL would be configurable
-            const response = await fetch('/api/calculate-scores', {
+            const response = await fetch('https://scoring-back-w0o0.onrender.com', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
