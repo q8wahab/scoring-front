@@ -163,6 +163,6 @@ setRoundScores(data);
                                     setPlayers(players.map(p => ({ ...p, status: '', cardValueSum: 0 })));
                                     setWinner('');
                                     setError('');
-                                }, className: "w-full mt-6 py-3 px-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-md shadow-md transition duration-150 ease-in-out", children: "\u0625\u0639\u0627\u062F\u0629 \u062A\u0639\u064A\u064A\u0646 \u0643\u0644 \u0627\u0644\u0646\u0642\u0627\u0637 \u0648\u0627\u0644\u0644\u0627\u0639\u0628\u064A\u0646" })] })] }), _jsx("footer", { className: "text-center mt-12 py-4 border-t border-gray-700", children: _jsx("p", { className: "text-gray-500", children: "\u062A\u0645 \u0627\u0644\u062A\u0637\u0648\u064A\u0631 \u0628\u0648\u0627\u0633\u0637\u0629 Manus AI" }) })] }));
+                                }, className: "w-full mt-6 py-3 px-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-md shadow-md transition duration-150 ease-in-out", children: "\u0625\u0639\u0627\u062F\u0629 \u062A\u0639\u064A\u064A\u0646 \u0643\u0644 \u0627\u0644\u0646\u0642\u0627\u0637 \u0648\u0627\u0644\u0644\u0627\u0639\u0628\u064A\u0646" })] })] }), _jsx("footer", { className: "text-center mt-12 py-4 border-t border-gray-700", children: _jsx("p", { className: "text-gray-500", children: "\u062A\u0645 \u0627\u0644\u062A\u0637\u0648\u064A\u0631 \u0628\u0648\u0627\u0633\u0637\u0629 A.ALHAJJI" }) })] }));
 }
 export default App;
