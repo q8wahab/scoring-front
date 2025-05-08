@@ -104,11 +104,19 @@ function App() {
                 },
                 body: JSON.stringify({ handType, players: playersData }),
             });
-            if (!response.ok) {
-                const errData = await response.json();
-                throw new Error(errData.error || `HTTP error! status: ${response.status}`);
-            }
-            const data = await response.json();
+            let data;
+try {
+    data = await response.json();
+} catch (parseError) {
+    throw new Error("الرد من الخادم ليس بصيغة JSON صالحة.");
+}
+
+if (!response.ok) {
+    throw new Error(data?.error || `HTTP error! status: ${response.status}`);
+}
+
+setRoundScores(data);
+
             setRoundScores(data);
             // Update total scores
             const newTotalScores = { ...totalScores };
